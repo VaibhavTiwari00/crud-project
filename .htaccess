@@ -1,0 +1,35 @@
+RewriteEngine on
+
+options -Indexes
+
+# this command will allow user to access this file 
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#Home Page route
+#^home([/]?)$ this is request
+#pages/home.php path
+
+ReWriteRule ^$ pages/home.php [NC,L]
+ReWriteRule ^home([/]?)$ pages/home.php [NC,L]
+
+
+ReWriteRule ^fetch-ajax([/]?)$ pages/fetch-ajax.php [NC,L]
+
+
+ReWriteRule ^rapid-data([/]?)$ pages/rapid-data.php [NC,L]
+
+ReWriteRule ^fetch-api([/]?)$ pages/fetch-api.php [NC,L]
+ReWriteRule ^learn([/]?)$ pages/learn.php [NC,L]
+ReWriteRule ^session([/]?)$ pages/session_get_data.php [NC,L]
+ReWriteRule ^session-out([/]?)$ pages/session_log_out.php [NC,L]
+
+
+ReWriteRule ^test([/]?)$ pages/test.php [NC,L]
+
+
+# full login system 
+ReWriteRule ^register([/]?)$ pages/register.php [NC,L]
+ReWriteRule ^login([/]?)$ pages/login.php [NC,L]
+ReWriteRule ^logout([/]?)$ pages/logout.php [NC,L]
+

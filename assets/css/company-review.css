@@ -1,0 +1,101 @@
+.company-review-first-section {
+    width: 100%;
+    border-bottom: 1px solid #ff5722;
+}
+
+.company-review-grid-section {
+    display: grid;
+    padding: 5% 10%;
+    grid-template-columns: 65% 1fr;
+}
+
+.company-review-first-section>h1 {
+    text-align: center;
+    line-height: 2.5;
+}
+
+.company-reviews-section {
+    width: 100%;
+}
+
+.company-reviews-box {
+    width: 75%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #f1d6d6;
+}
+
+.company-reviews-box>h6 {
+    line-height: 2;
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.company-reviews-box>h6:hover {
+    text-decoration: underline;
+}
+
+.company-reviews-star-box {
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    text-align: center;
+}
+
+.company-reviews-star-box>p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.company-reviews-star-box>p>span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.company-reviews-box-star {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.company-reviews-box-star>i {
+    color: #ff5722;
+}
+
+.company-reviews-box-review {
+    border-top: 1px solid #ff5722;
+    background-color: #fff4f4;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.company-reviews-box-review>a {
+    padding: 7px 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff5722;
+    text-align: center;
+}
+
+.company-reviews-box-review>a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .company-review-first-section>h1 {
+        font-size: 28px;
+    }
+    .company-review-grid-section {
+        grid-template-columns: 100%;
+    }
+    .company-reviews-box {
+        width: 100%;
+    }
+    .company-reviews-star-box {
+        width: 60%;
+    }
+}
